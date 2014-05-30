@@ -721,20 +721,20 @@ dt {
   font-weight: normal;
   list-style: none;
   display: inline;
-  color: white;
+  color: black;
   line-height: 50px;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
 #header nav li a {
-  color: white;
-  border: 1px solid #5d910b;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10));
-  background: -webkit-linear-gradient(#93bd20, #659e10);
-  background: -moz-linear-gradient(#93bd20, #659e10);
-  background: -o-linear-gradient(#93bd20, #659e10);
-  background: -ms-linear-gradient(#93bd20, #659e10);
-  background: linear-gradient(#93bd20, #659e10);
+  color: black;
+  border: 1px solid #ff7400;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff9640), color-stop(100%, #a64b00));
+  background: -webkit-linear-gradient(#ff9640, #a64b00);
+  background: -moz-linear-gradient(#ff9640, #a64b00);
+  background: -o-linear-gradient(#ff9640, #a64b00);
+  background: -ms-linear-gradient(#ff9640, #a64b00);
+  background: linear-gradient(#ff9640, #a64b00);
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
@@ -754,22 +754,22 @@ dt {
   text-align: center;
 }
 #header nav li a:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FF9640), color-stop(100%, #527A64B00f0e));
-  background: -webkit-linear-gradient(#FF9640, #A64B00);
-  background: -moz-linear-gradient(#FF9640, #A64B00);
-  background: -o-linear-gradient(#FF9640, #A64B00);
-  background: -ms-linear-gradient(#FF9640, #A64B00);;
-  background: linear-gradient(#FF9640, #A64B00);
-  background-color: #FF7400;
-  border: 1px solid #A64B00;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff9640), color-stop(100%, #a64b00));
+  background: -webkit-linear-gradient(#ff9640, #a64b00);
+  background: -moz-linear-gradient(#ff9640, #a64b00);
+  background: -o-linear-gradient(#ff9640, #a64b00);
+  background: -ms-linear-gradient(#ff9640, #a64b00);
+  background: linear-gradient(#ff9640, #a64b00);
+  background-color: #ff7400;
+  border: 1px solid #a64b00;
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
 }
 #header nav li.fork {
-  float: center;
-  margin-center: 0px;
+  float: left;
+  margin-left: 0px;
 }
 #header nav li.downloads {
   float: right;
