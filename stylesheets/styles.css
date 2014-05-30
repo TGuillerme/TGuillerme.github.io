@@ -581,12 +581,12 @@ h3 {
 }
 
 a {
-  color: #ffcc00;
+  color: #ff7400;
   font-weight: 400;
   text-decoration: none;
 }
 a:hover {
-  color: #ffeb9b;
+  color: #ff9640;
 }
 
 a small {
@@ -702,12 +702,8 @@ dt {
   height: 60px;
   width: 100%;
   position: fixed;
-  background: url(../images/nav-bg.gif) #353535;
-  border-bottom: 4px solid #434343;
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  background: #292929;
+
 }
 #header nav {
   max-width: 650px;
@@ -729,22 +725,7 @@ dt {
 #header nav li a {
   color: black;
   border: 1px solid #ff7400;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff9640), color-stop(100%, #a64b00));
-  background: -webkit-linear-gradient(#ff9640, #a64b00);
-  background: -moz-linear-gradient(#ff9640, #a64b00);
-  background: -o-linear-gradient(#ff9640, #a64b00);
-  background: -ms-linear-gradient(#ff9640, #a64b00);
-  background: linear-gradient(#ff9640, #a64b00);
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -o-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -khtml-border-radius: 2px;
-  border-radius: 2px;
-  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
-  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  background: #ff7400;
   background-color: #ff7400;
   padding: 10px 12px;
   margin-top: 6px;
@@ -754,22 +735,14 @@ dt {
   text-align: center;
 }
 #header nav li a:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff9640), color-stop(100%, #a64b00));
-  background: -webkit-linear-gradient(#ff9640, #a64b00);
-  background: -moz-linear-gradient(#ff9640, #a64b00);
-  background: -o-linear-gradient(#ff9640, #a64b00);
-  background: -ms-linear-gradient(#ff9640, #a64b00);
-  background: linear-gradient(#ff9640, #a64b00);
-  background-color: #ff7400;
-  border: 1px solid #a64b00;
-  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
-  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
-  -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
-  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
+  background:  #ff9640;
+  background-color:  #ff9640;
+  border: 1px solid #ff9640;
 }
 #header nav li.fork {
   float: left;
-  margin-left: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 #header nav li.downloads {
   float: right;
