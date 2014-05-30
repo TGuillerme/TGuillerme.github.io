@@ -581,12 +581,12 @@ h3 {
 }
 
 a {
-  color: #ffcc00;
+  color: #ff7400;
   font-weight: 400;
   text-decoration: none;
 }
 a:hover {
-  color: #ffeb9b;
+  color: #ff9640;
 }
 
 a small {
@@ -721,13 +721,13 @@ dt {
   font-weight: normal;
   list-style: none;
   display: inline;
-  color: black;
+  color: #666666;
   line-height: 50px;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
 #header nav li a {
-  color: black;
+  color: #666666;
   border: 1px solid #ff7400;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff9640), color-stop(100%, #a64b00));
   background: -webkit-linear-gradient(#ff9640, #a64b00);
