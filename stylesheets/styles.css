@@ -721,14 +721,14 @@ dt {
   font-weight: normal;
   list-style: none;
   display: inline;
-  color: #666666;
+  color: black;
   line-height: 50px;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
 #header nav li a {
-  color: #666666;
-  border: 1px solid #ff7400;
+  color: black;
+  border: 1px solid #a64b00;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff9640), color-stop(100%, #a64b00));
   background: -webkit-linear-gradient(#ff9640, #a64b00);
   background: -moz-linear-gradient(#ff9640, #a64b00);
@@ -745,7 +745,7 @@ dt {
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
   -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
-  background-color: #93bd20;
+  background-color: #ff7400;
   padding: 10px 12px;
   margin-top: 6px;
   line-height: 14px;
@@ -778,6 +778,11 @@ dt {
 #header nav li.title {
   float: right;
   margin-right: 10px;
+  font-size: 11px;
+}
+#header nav li.button {
+  margin-left: 6px;
+  margin-right: 6px;
   font-size: 11px;
 }
 
