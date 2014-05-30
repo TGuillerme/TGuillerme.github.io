@@ -581,12 +581,12 @@ h3 {
 }
 
 a {
-  color: #ff7400;
+  color: #ffcc00;
   font-weight: 400;
   text-decoration: none;
 }
 a:hover {
-  color: #ff9640;
+  color: #ffeb9b;
 }
 
 a small {
@@ -728,7 +728,11 @@ dt {
 }
 #header nav li a {
   color: black;
+<<<<<<< HEAD
   border: 1px solid #a64b00;
+=======
+  border: 1px solid #ff7400;
+>>>>>>> parent of 7478f8c... buttons
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff9640), color-stop(100%, #a64b00));
   background: -webkit-linear-gradient(#ff9640, #a64b00);
   background: -moz-linear-gradient(#ff9640, #a64b00);
