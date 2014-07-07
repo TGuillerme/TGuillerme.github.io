@@ -830,20 +830,123 @@ section #title .credits.right {
 }
 
 /* =============================================================================
-   Scroll Bar
+   Animated
    ========================================================================== */
 
-#outer_wrapper {  
-    overflow: scroll;  
-    width:100%;
+* {margin: 0; padding: 0;}
+ 
+body {
 }
-#outer_wrapper #inner_wrapper {
-    width:1000px; /* If you have more elements, increase the width accordingly */
+ 
+#container {
+    width: 650px;
+    overflow: hidden;
+    margin: 50px auto;
 }
-#outer_wrapper #inner_wrapper div.box { /* Define the properties of inner block */
-    width: 150px;
-    height:200px;
-    float: left;
-    margin: 0 4px 0 0;
-    /* border:1px grey solid; */
+
+/*header*/
+header {
+    width: 650px;
+    margin: 40px auto;
 }
+ 
+header h1 {
+    text-align: center;     
+}
+ 
+/*photobanner*/
+ 
+.photobanner {
+    height: 233px;
+    width: 2000px;
+    margin-bottom: 40px;
+}
+ 
+.photobanner img {
+    -webkit-transition: all 0.5s ease; /* zoom speed */
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+ 
+.photobanner img:hover {
+    -webkit-transform: scale(1.1); /* zoom scale */
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+ 
+    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+
+/*keyframe animations*/
+.first {
+    -webkit-animation: bannermove 30s linear infinite;
+       -moz-animation: bannermove 30s linear infinite;
+        -ms-animation: bannermove 30s linear infinite;
+         -o-animation: bannermove 30s linear infinite;
+            animation: bannermove 30s linear infinite;
+}
+ 
+@keyframes bannermove {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -600px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -600px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -600px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -600px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -600px;
+ }
+ 
+}
+
+
+
+
+
+
+
+
