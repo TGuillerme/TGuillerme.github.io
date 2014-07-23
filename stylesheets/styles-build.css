@@ -579,6 +579,56 @@ h3 {
   font-weight: normal;
   color: #b6b6b6;
 }
+/*
+ * Table buttons
+ */
+
+#table-button li {
+  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  list-style: none;
+  display: inline;
+  color: black;
+  line-height: 30px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+#table-button nav li a {
+  color: black;
+  border: 1px solid #ff7400;
+  background: #ff7400;
+  background-color: #ff7400;
+  padding: 5px 5px;
+  margin-top: 5px;
+  line-height: 12px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+}
+#table-button nav li a:hover {
+  background:  #ff9640;
+  background-color:  #ff9640;
+  border: 1px solid #ff9640;
+}
+#table-button nav li.fork {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#table-button nav li.downloads {
+  margin-left: 6px;
+}
+#table-button nav li.title {
+  margin-right: 5px;
+  font-size: 5px;
+}
+#table-button nav li.button {
+  margin-left: 6px;
+  margin-right: 6px;
+  font-size: 11px;
+}
+
+
+
 
 a {
   color: #ff7400;
@@ -741,8 +791,8 @@ dt {
 }
 #header nav li.fork {
   float: left;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #header nav li.downloads {
   float: right;
@@ -829,124 +879,8 @@ section #title .credits.right {
   }
 }
 
-/* =============================================================================
-   Animated
-   ========================================================================== */
 
-* {margin: 0; padding: 0;}
- 
-body {
-}
- 
-#container {
-    width: 650px;
-    overflow: hidden;
-    margin: 50px auto;
-}
-
-/*header*/
-header {
-    width: 650px;
-    margin: 40px auto;
-}
- 
-header h1 {
-    text-align: center;     
-}
- 
-/*photobanner*/
- 
-.photobanner {
-    height: 233px;
-    width: 2000px;
-    margin-bottom: 40px;
-}
- 
-.photobanner img {
-    -webkit-transition: all 0.5s ease; /* zoom speed */
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
- 
-.photobanner img:hover {
-    -webkit-transform: scale(1.1); /* zoom scale */
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    cursor: pointer;
- 
-    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-}
-
-
-/*keyframe animations*/
-.first {
-    -webkit-animation: bannermove 30s linear infinite;
-       -moz-animation: bannermove 30s linear infinite;
-        -ms-animation: bannermove 30s linear infinite;
-         -o-animation: bannermove 30s linear infinite;
-            animation: bannermove 30s linear infinite;
-}
- 
-@keyframes bannermove {
- 0% {
-    margin-left: 0px;
- }
- 100% {
-    margin-left: -600px;
- }
- 
-}
- 
-@-moz-keyframes bannermove {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -600px;
- }
- 
-}
- 
-@-webkit-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -600px;
- }
- 
-}
- 
-@-ms-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -600px;
- }
- 
-}
- 
-@-o-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -600px;
- }
- 
-}
-
-
-
-
-  /***styles for this demo only***/
+/*Blog gallery*/
 
   #gallery0 {
   overflow: hidden;   /*encloses float children*/
@@ -992,7 +926,4 @@ header h1 {
   display: block;
   margin: 0 auto;
   }
-
-
-
 
