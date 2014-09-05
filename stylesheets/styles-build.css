@@ -815,7 +815,8 @@ section #title .credits.right {
     display: block;
   }
 }
-@media print, screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
+/*@media print, screen and (max-width: 480px) */
   #header {
     margin-top: -20px;
   }
@@ -825,6 +826,7 @@ section #title .credits.right {
   }
 
   nav {
+    display : block;
     /*display: none;*/
   }
 }
