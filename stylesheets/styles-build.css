@@ -821,11 +821,11 @@ section #title .credits.right {
   }
 
   section {
-    margin-top: 70px;
+    margin-top: 90px;
   }
 
   nav {
-    display : block;
+    display : block center;
     /*display: none;*/
   }
 
