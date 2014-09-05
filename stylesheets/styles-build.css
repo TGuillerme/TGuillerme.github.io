@@ -579,56 +579,6 @@ h3 {
   font-weight: normal;
   color: #b6b6b6;
 }
-/*
- * Table buttons
- */
-
-#table-button li {
-  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  list-style: none;
-  display: inline;
-  color: black;
-  line-height: 30px;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
-  font-size: 14px;
-}
-#table-button nav li a {
-  color: black;
-  border: 1px solid #ff7400;
-  background: #ff7400;
-  background-color: #ff7400;
-  padding: 5px 5px;
-  margin-top: 5px;
-  line-height: 12px;
-  font-size: 14px;
-  display: inline-block;
-  text-align: center;
-}
-#table-button nav li a:hover {
-  background:  #ff9640;
-  background-color:  #ff9640;
-  border: 1px solid #ff9640;
-}
-#table-button nav li.fork {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-#table-button nav li.downloads {
-  margin-left: 6px;
-}
-#table-button nav li.title {
-  margin-right: 5px;
-  font-size: 5px;
-}
-#table-button nav li.button {
-  margin-left: 6px;
-  margin-right: 6px;
-  font-size: 11px;
-}
-
-
-
 
 a {
   color: #ff7400;
@@ -751,7 +701,7 @@ dt {
   top: 0px;
   height: 60px;
   width: 100%;
-  position: fixed;
+  /*position: fixed;*/
   background: #292928;
 
 }
@@ -791,8 +741,8 @@ dt {
 }
 #header nav li.fork {
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 #header nav li.downloads {
   float: right;
