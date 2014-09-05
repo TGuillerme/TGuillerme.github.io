@@ -701,7 +701,7 @@ dt {
   top: 0px;
   height: 60px;
   width: 100%;
-  /*position: fixed;*/
+  position: fixed;
   background: #292928;
 
 }
