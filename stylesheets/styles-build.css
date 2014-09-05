@@ -819,7 +819,7 @@ section #title .credits.right {
   #header {
     margin: 0 auto;
     padding: 0 10px;
-    margin-top: 0px;
+    margin-top: -10px;
     background: #292928;
   }
 

@@ -815,17 +815,25 @@ section #title .credits.right {
     display: block;
   }
 }
-@media print, screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   #header {
-    margin-top: -20px;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-top: -10px;
+    background: #292928;
   }
 
   section {
-    margin-top: 40px;
+    margin-top: 100px;
   }
 
   nav {
-    display: none;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-top: 0px;
+    background: #292928;
+    display : block center;
+    /*display: none;*/
   }
 }
 
