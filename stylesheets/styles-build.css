@@ -817,7 +817,7 @@ section #title .credits.right {
 }
 @media print, screen and (max-width: 480px) {
   #header {
-    margin-top: -20px;
+    margin-top: 0px;
   }
 
   section {
@@ -825,7 +825,7 @@ section #title .credits.right {
   }
 
   nav {
-    display: none;
+    /*display: none;*/
   }
 }
 
