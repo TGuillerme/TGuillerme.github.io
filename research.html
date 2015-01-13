@@ -39,72 +39,42 @@
           <hr>
         </div>
         <h2>
-          <a name="How does including fossils" class="anchor" href="#includingfossils"><span class="octicon octicon-link"></span></a>How does including fossils in phylogenies change our interpretation of present-day biodiversity patterns?
+          <a name="How does including fossils" class="anchor" href="#includingfossils"><span class="octicon octicon-link"></span></a>Combining living and fossil taxa in macroevolutionary studies
+          <!-- How does including fossils into phylogenetic trees changes our interpretation of phylogenetic comparative methods?-->
         </h2>
+        <h3>
+          <center>Key words: Tree inference, comparative analysis, palaeontology, morphometrics, bioinformatics.</center>
+        </h3>
         <p></p>
-        <p>Living species represent less than 1% of all species that have ever lived.
-          Ignoring fossil taxa may lead to simplification or misinterpretation of macroevolutionary patterns and processes such as species richness through time, paleobiogeography or ecological diversity:
-        </p>
-        <DL>
-          <DD>-For example, the Probosidea family (elephants and relatives) are represented by only 2 extant genera but that number rises to 43 when the extinct genera are included.</p>
-          <DD>-Tinamous, which are South-American flying birds are the only members of their group (Tinamiformes) but their closest fossil relatives are the giant flightless Moas found in New-Zealand on the other side of the Pacific Ocean.</p>
-          <DD>-Crocodilomorphs (crocodiles, alligators and gavials) live in either fluvial or coastal habitats today, but the fossil record also contains many pelagic, fully terrestrial or even semi-arboreal species.</p>
-        </DL>
-        <p>Therefore it is critically important to add fossils into phylogenies to understand the full macroevolutionary processes that led to present day biodiversity.
-          I am interested in the practicalities of methods for building phylogenies with living and fossil taxa as well as the new approaches for analysing them using state-of-the art of comparative methods.
-          During my PhD I am investigating the best ways to combine living and fossil taxa in trees, using primates as an example.
-          I am then assessing the effect of adding fossils to phylogenies on our understanding the evolution of body mass and niche replacement through time in primates.
+        <p>I am generally interested in the question of how does including fossils into phylogenetic trees changes our interpretation of macroevolutionary patterns and processes.
         </p>
 
-        <!-- Add link here-->
+        <h3>
+          <a name="Including fossils into trees" class="anchor" href="#includefossils"><span class="octicon octicon-link"></span></a>Phylogenetic inferences
+        </h3>
+        <p>Traditionally, neontologists use fossils as nodes for calibrating molecular clocks and paleontologists, on the other hand, use fossils as tips but through a maximum parsimony approach. 
+          However, one class of methods, called Total Evidence Methods, allows to infer phylogenies by combining both living and fossil morphological data with living taxa molecular data.
+          This method has several clear advantages such as the ability to infer the tree from the supermatrix using probabilistic methods (i.e. Maximum Likelihood or Bayesian) or using the fossils as tips rather than nodes.
+        <p>Although these methods for combining living and fossil taxa in the same trees seem very promising, they require a lot of data and are therefore likely to suffer from missing data issues, which may affect their ability to infer correct phylogenies.
+          Through a simulation approach, I am testing what is the actual effect of missing data on recovering accurate tree topology. See the full story <a href="http://tguillerme.github.io/publications.html#TEM_sim">here</a>.
+        </p>
 
         <h3>
-          <a name="Including fossils into trees" class="anchor" href="#includefossils"><span class="octicon octicon-link"></span></a>Including fossils in trees
+          <a name="Using trees" class="anchor" href="#usingtrees"><span class="octicon octicon-link"></span></a>Comparative methods
         </h3>
-        <p>Fossils can be added to phylogenetic trees either as nodes or as tips.
-          Different research fields usually focus on one of these two options:
+        <p>Using phylogenies for looking at the tempo and mode of evolution of some traits or at their evolutionary correlation is one of the major class of phylogenetic comparative methods.
+          Because of the popularity of such analysis, I'm interested in looking at the effect of fossils in phylogenies on the estimation of the fit of traits evolutionary models and strength or direction of correlation between them.
         </p>
-        <DL>
-          <DD>-Neontologists traditionally use fossils as nodes for calibrating molecular clocks (probabilistic approach).
-          <DD>-Paleontologists traditionally use fossils as tips in cladograms (parsimony approach).
-        </DL>
-        <p>I am interested in combining these traditionally separate approaches by adding fossils to phylogenies as tips using probabilistic techniques such as Maximum Likelihood or Bayesian methods that allow you to use all the available data (Total Evidence Method) and to deal with uncertainty.</p>
+        <h3>
+          <a name="Building trees" class="anchor" href="#buildingtrees"><span class="octicon octicon-link"></span></a>Spatio-temporal disparity
+        </h3>
+        <p>One advantage of trees containing fossils as tips rather than nodes is that one can apply phylogenetic comparative methods on both fossil and living species and therefore more accurately infer the evolution of a clade along the phylogeny.
+          Also, by the way they are build, these phylogenetic trees allows to have a large quantity of cladistic (morphological) data available for studying the evolution of a trait within the clade through time.
+          One way to summarize the cladistic data of a group of taxa is to analyse the variance/co-variance of these traits summarized in a morphospace showing the cladistic space that the various taxa are occupying. 
+        </p>
+        <p>I am interested in the ways to detect and quantify any relative or absolute changes in cladistic morphospace through time using trees that contain both living and fossil taxa.</p>
+      
 
-        <h3>
-          <a name="Collecting data" class="anchor" href="#collectingdata"><span class="octicon octicon-link"></span></a>Collecting data
-        </h3>
-        <p>Although methods for combining living and fossil taxa in the same trees seem very promising, they require a lot of data and are therefore likely to suffer from missing data issues, which may affect their ability to infer correct phylogenies.
-          Through a simulation approach, I am testing what is the actual effect of missing data on recovering accurate tree topology.
-        </p>
-        <p>The total evidence supermatrices I use contain both living and fossil species with both molecular (for living species only) and morphological data (for both living and fossil species).
-          In my simulations, I am generating random total evidence supermatrices and removing various amount of data from the morphological part.
-          I then infer the phylogeny from these matrices in a Maximum Likelihood and a Bayesian framework (with all the data and with various amount of missing data).
-          Finally I compare the topology of the tree inferred from the matrix with no missing data to the trees that are constructed from other matrices with varying amounts of missing data.
-        </p>
-        <p>I found that the Bayesian framework performs poorly in recovering the true tree topology (regardless of the amount of missing data) and that the Maximum Likelihood approach works far better as long as some of the same morphological characters are present in  the majority of taxa.</p>
-
-        <h3>
-          <a name="Building trees" class="anchor" href="#buildingtrees"><span class="octicon octicon-link"></span></a>Building trees
-        </h3>
-        <p>Primates, the taxonomic order to which we belong, are one of the most studied vertebrate groups.
-          There are vast quantities of molecular and morphological data available for extant species and the fossil record of this group is very well studied.
-          Primates are divided into two groups: Haplorrhini (Tarsiiformes, Simiiformes and Omomyiformes) and Strepsirrhini (Adapiformes, Lorisiformes and Lemuriformes).
-          Extant Strepsirrhini are less diverse than Haplorrhini in species richness (Strepsirrhini: ~70species – Haplorrhini: ~150species.);
-          biogeographical distribution (Strepsirrhini: South-East Asia, Africa and Madagascar – Haplorrhini: South-America, Africa, Asia - or the whole world if you include <i>Homo sapiens</i>!)
-          and body mass variance (Strepsirrhini: 100g-3.5kg – Haplorrhini: 125g-120kg).
-          However, if one includes the fossil Strepsirrhini, all of the patterns in these variables become closer to the patterns seen in Haplorrhini (~200species; Old World and northern Africa distribution; body mass ranging from 100g to 120kg).
-        </p>
-        <p>I am building a Strepsirrhini tree with 70 nuclear and mitochondrial genes for 70 living and 4 sub-fossil taxa and ~1000 morphological characters for 25 living and 46 fossil taxa using the total evidence method approach.</p>
-        
-        <h3>
-          <a name="Using trees" class="anchor" href="#usingtrees"><span class="octicon octicon-link"></span></a>Using trees
-        </h3>
-        <p>My aim is to use comparative methods approaches to discover the patterns of evolution of body mass in Strepsirrhini.
-          For example, I will compare body mass evolution in island vs. mainland groups such as present day Lemuriformes (Madagascar) and Lorisiformes (Africa and South-East Asia).
-        </p>
-        <p>I’m also interested in understanding Strepsirrhini history especially how the archaic group (Adapiformes) was replaced by the modern groups (Lemuriformes and Lorisiformes).
-          I’m using a morphospace through time approach to measure the overlap of Adapiformes vs. Lemuriformes/Lorisiformes in morphospace occupation and assess if the evidence for possible competitive replacement by niche overlapping.
-        </p>
       </section>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
