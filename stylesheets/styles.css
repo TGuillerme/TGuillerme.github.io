@@ -885,3 +885,50 @@ section #title .credits.right {
   margin: 0 auto;
   }
 
+/*Homepage gallery*/
+
+  #profile1 {
+  overflow: hidden;   /*encloses float children*/
+  }
+
+  * html #profile1 {
+  overflow: hidden;
+  height: 0px;        /*sets hasLayout for IE<=6*/
+  }
+
+  #profile0,
+  #profile1,
+  #profile2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  }
+
+  #profile0 li,
+  #profile1 li,
+  #profile2 li {
+  margin: 0em 0em;
+  text-align: center;
+  display: -moz-inline-box;
+  display: inline-block;
+  vertical-align: top;
+  }
+
+  #profile1 li {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 100px;
+  }
+
+  #profile2 li p,
+  #profile2 li p {
+  margin: 0em 0px;
+  width: 125px;
+  }
+
+  li img {
+  display: block;
+  margin: 0 auto;
+  }
+
