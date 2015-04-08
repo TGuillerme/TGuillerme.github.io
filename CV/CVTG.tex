@@ -1,77 +1,102 @@
 %HEADER
-
 \documentclass[10pt,a4paper]{article}
 \usepackage[left=0.7in, top=0.6in, right=0.7in, bottom=0.6in]{geometry}
 \usepackage{enumerate}  % put in numbers or bullet points
 \usepackage{setspace}   % line spacing                  
-\usepackage{eurosym}
+\usepackage[gen]{eurosym}
 \usepackage{fullpage}
 \usepackage{lipsum} % justify text
-\pagestyle{empty} % Removes page numbering
+%\pagestyle{empty} % Removes page numbering
 \usepackage[osf]{mathpazo} % palatino font package
-\usepackage{hyperref} %hyperlinks
-
+\usepackage[colorlinks = true, urlcolor = blue]{hyperref} %hyperlinks
+\usepackage{fancyhdr}
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\raggedright}{}{0em}{} [\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{10pt} % Spacing around sections (left, above, below)
 \newcommand\textbox[1]{%
   \parbox{.333\textwidth}{#1}%
 } % Justify left/right
-\linespread{1.5}
+\linespread{1}
+\pagenumbering{arabic}
 
-\usepackage{fancyhdr}
-\usepackage{lastpage}
+\setcounter{secnumdepth}{0}                 %removes numbers from section headings
 \pagestyle{fancy}
-\fancyhf{}
-\rfoot{\thepage \hspace{1pt} / \pageref{LastPage}}
+\rhead{\textit{Thomas Guillerme}}
+\lhead{ }
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headsep}{0.3in}
 
+\titleformat*{\subsubsection}{\small\bfseries\uppercase}
 
-%CV head
 
 \begin{document}
-
+\thispagestyle{empty}
 \par{\centering{\Huge Thomas Guillerme\bigskip\par}
 
-\large\centering{{Zoology PhD Candidate at Trinity College Dublin}}\\
-
-$\newline$
+%$\newline$
 
 %CONTACT
-
-\noindent \textbf{Contact} \hfill \textbf{Address}
-
-\noindent \href{mailto:guillert@tcd.ie}{guillert@tcd.ie} \hfill Zoology Department
-
-\noindent \href{https://twitter.com/TGuillerme}{@TGuillerme} \hfill School of Natural Sciences 
-
-\noindent \href{http://tguillerme.github.io/}{Webpage} \hfill Trinity College Dublin
-
-\noindent +353877021326 \hfill 2 College Green, Dublin 2
-
-\noindent   \hfill IRELAND
+\centering{email: \href{mailto:guillert@tcd.ie}{guillert@tcd.ie} --- 
+Webpage: \href{http://tguillerme.github.io}{tguillerme.github.io} ---
+Twitter: \href{https://twitter.com/TGuillerme}{@TGuillerme} \\[1.2ex]
+GitHub: \href{https://github.com/TGuillerme}{TGuillerme} ---
+Google Scholar: \href{http://scholar.google.fr/citations?user=LA9l9EkAAAAJ&hl=en}{goo.gl/OP1XQG} ---
+FigShare: \href{http://figshare.com/authors/Thomas_Guillerme/577616}{goo.gl/8fPU7k}\\[1.2ex]
+ORCID: \href{http://orcid.org/0000-0003-4325-1275}{0000-0003-4325-1275} ---
+ResearcherID: \href{http://www.researcherid.com/ProfileView.action?SID=W1WYN6K6IQQWJKZpiNz&returnCode=ROUTER.Success&queryString=KG0UuZjN5WlcX%252Bo9lzvs8V%252BlR4vOY3n19MP8WRfU2kk%253D&SrcApp=CR&Init=Yes}{G-9833-2014}\\[1.2ex]
+}
+\bigskip
+\section{RESEARCH INTERESTS}
+\raggedright
+I am interested in macroevolutionary biology; the stories behind the history of Life and the methodologies with which it is investigated. I am particularly interested in ways of combining classical methods such as descriptive palaeontology with modern bioinformatic tools such as phylogenomics and mathematical modelling.
+\bigskip
 
 %----------------------------------------------------------------------------------------
 %   Education
 %----------------------------------------------------------------------------------------
 \section{EDUCATION}
-
 \raggedright
 \begin{tabular}{ll} 
-2012 - Present: & PhD in Zoology, Trinity College Dublin - IE\\
-& \textit{How does including fossils in phylogenetic trees change} \\
-& \textit{our interpretation of present-day biodiversity?}\\ &\\
+2012 - Present: & PhD in Zoology, Trinity College Dublin\\
+(due 10/2015) & \textit{How does combining data from fossils and living species change} \\
+& \textit{our interpretation of evolutionary patterns and processes?}\\ &\\
 %---------------------------------------
-2010 - 2012: & Master degree in Palaeontology, Universit\'{e} Montpellier II - FR\\
-& with honours, ranking 3/13\\
+2010 - 2012: & MSc in Palaeontology (honours), Universit\'{e} Montpellier II\\
 & $2^{nd}$ year project: \textit{Molecular clocks and evolutionary rates}\\
 & \textit{among primates: a palaeontological and genomic approach.} \\
-& $1^{st}$ year project: \textit{Southern France Upper Cretaceous theropod}\\
+& $1^{st}$ year project: \textit{Southern France Upper Cretaceous Theropod}\\
 & \textit{teeth variability.} \\
 & \\
 %---------------------------------------
-2007 - 2010: & Bachelor degree in Biology, Universit\'{e} Montpellier II - FR\\
+2007 - 2010: & BSc in Biology, Universit\'{e} Montpellier II\\
 & \\
 \end{tabular}
+
+%-------------------------------------
+% Publications
+%--------------------------------------
+\section{PUBLICATIONS}
+\raggedright\textbf{Peer reviewed}\\[1.5ex]
+\begin{tabular}{ll}
+In review: & \textbf{Guillerme T.} and Cooper, N. Effects of missing data on topological\\
+& inference using a Total Evidence approach.\\
+& \textit{PLOS ONE}\\ %[1.5ex]
+\end{tabular}\\
+\textit{Personal Contributions:} Designing the simulations, writing the code and running the analysis, writing the paper.
+\bigskip
+
+\begin{tabular}{ll}
+2014: & Healy, K., \textbf{Guillerme T.}, Finlay, S., Kane, A., Kelly, S.B.A., McClean, D., Kelly, \\
+& D.J., Donohue, I., Jackson, A.L. and Cooper, N. \\
+& Ecology and mode-of-life explain lifespan variation in birds and mammals.\\
+& \textit{Proceedings of the Royal Society B}, 281(1784). DOI: 10.1098/rspb.2014.0298\\ %[1.5ex]
+\end{tabular}
+
+\textit{Personal Contributions:} writing the code and running the analysis. Developed \texttt{R} package: \texttt{mulTree} -- \href{https://github.com/TGuillerme/mulTree}{github.com/TGuillerme/mulTree}.
+\bigskip
+\bigskip
+
 %----------------------------------------------------------------------------------------
 %   Awards and Grants
 %----------------------------------------------------------------------------------------
@@ -84,121 +109,116 @@ $\newline$
 \end{tabular}
 \bigskip
 
-%-------------------------------------
-% Publications
-%--------------------------------------
-\section{PUBLICATIONS}
-\raggedright\textbf{Peer reviewed}\\[1.5ex]
-\begin{tabular}{ll}
-In review: & \textbf{Guillerme T.} and Cooper, N. Effects of missing data on topological\\
-& inference using a Total Evidence approach.\\
-& \textit{PLOS ONE}\\ [1.5ex]
-\end{tabular}
-\textit{Personal Contributions:} Designing the simulations, writing the code and running the analysis, writing the paper.
-\bigskip
-
-\begin{tabular}{ll}
-2014: & Healy, K., \textbf{Guillerme T.}, Finlay, S., Kane, A., Kelly, S.B.A., McClean, D., Kelly, \\
-& D.J., Donohue, I., Jackson, A.L. and Cooper, N. \\
-& Ecology and mode-of-life explain lifespan variation in birds and mammals.\\
-& \textit{Proceedings of the Royal Society B}, 281(1784). DOI: 10.1098/rspb.2014.0298\\ [1.5ex]
-\end{tabular}
-\bigskip
-\textit{Personal Contributions:} collecting the data, writing the code and running the analysis.
-\bigskip
-
-
-%----------------------------------------------------------------------------------------
-%   Academic Services
-%----------------------------------------------------------------------------------------
-\section{ACADEMIC SERVICES}
-Reviewer for the International Journal of Primatology
-\bigskip
-
 %----------------------------------------------------------------------------------------
 %   Computer skills
 %----------------------------------------------------------------------------------------
 \section{COMPUTER SKILLS}
 \begin{tabular}{ll}
-%Taught skills (workshops?)
-Coding: & R, Bash, HTML, LaTeX, git\\[1.5ex]
+Coding: & \textbf{{R}$^{*}$}, \textbf{Bash$^{*}$}, HTML, \LaTeX, git\\[1.5ex]
 %---------------------------------------
-Phylogenetics: & $PAUP^{*}$, MrBayes, BEAST, RAxML, PhyloBayes, CoEvol \\[1.5ex]
-& MACSE, MAFFT, SEAview, Tracer, Mesquite\\
-& R\{ape\}, R\{geiger\}, R\{diversitree\}, R\{mcmcglmm\}, R\{caper\} \\[1.5ex]
+Phylogenetics: & PAUP, MrBayes, \textbf{BEAST$^{*}$}, RAxML, PhyloBayes, CoEvol \\
+& MACSE, MAFFT, SEAview, Tracer, Mesquite, \texttt{R\{ape\}} \\
+& \texttt{R\{geiger\}}, \texttt{R\{diversitree\}}, \texttt{R\{MCMCglmm\}}, \texttt{R\{caper\}} \\[1.5ex]
 %---------------------------------------
-Morphometrics: & TPS, R\{geomorph\}, R\{MASS\} \\[1.5ex]
+Morphometrics: & TPS, \texttt{R\{geomorph\}}, \texttt{R\{MASS\}} \\[1.5ex]
 %---------------------------------------
 Graphics: & Adobe Illustrator, Adobe Photoshop, Gimp, Inkscape\\[1.5ex]
 %---------------------------------------
-& \\
-\end{tabular}
-\href{https://github.com/TGuillerme?tab=repositories}{GitHub Repository}
+\end{tabular} \\
+$^{*}$ Skills taught at workshops (see below)
 \bigskip
-
 
 %----------------------------------------------------------------------------------------
 %   Conferences and workshops
 %----------------------------------------------------------------------------------------
 \section{CONFERENCES AND WORKSHOPS}
 
-\raggedright\textbf{Conferences contributions}\\[1.5ex]
+\raggedright\textbf{International Conferences}\\[1.5ex]
 \begin{tabular}{ll}
 %---------------------------------------
-2014: & \textit{$4^th$ Annual Botany-Zoology Trinity Postgraduate Symposium} - Trinity College\\
-& Dublin - IE\\
-& Talk: Diversity and disparity in mammals around the K-T Boundary.\\
+2014: & \textit{SVP annual meeting} - Berlin, Germany\\
+& Symposium presentation (invited talk): \textit{Putting fossils in trees}\\
+& Talk: Total evidence phylogenies and missing data\\
+& Available here: \href{http://figshare.com/articles/Total_evidence_phylogenies_the_missing_data_issue/1086216}{goo.gl/CBqSVJ}\\
 %---------------------------------------
-2014: & \textit{SVP annual meeting} - Berlin - DE\\
-& Symposium presentation: \textit{Putting fossils in trees}\\
-& Talk: \href{http://figshare.com/articles/Total_evidence_phylogenies_the_missing_data_issue/1086216}{Total evidence phylogenies and missing data}\\
+2014: & \textit{BES Macroecology SIG meeting} - University of Nottingham, UK\\
+& Talk: Trees with fossil and living species: the data issue\\ 
+& Available here: \href{http://figshare.com/articles/Trees_with_fossil_and_living_species_the_data_issue/1056307}{goo.gl/Sdcx0n}\\
 %---------------------------------------
-2014: & \textit{BES Macroecology SIG meeting} - University of Nottingham - UK\\
-& Talk: \href{http://figshare.com/articles/Trees_with_fossil_and_living_species_the_data_issue/1056307}{Trees with fossil and living species: the data issue}\\
-%---------------------------------------
-2014: & \textit{Evolution 2014} - Raleigh Convention Centre - USA(NC)\\
+2014: & \textit{Evolution 2014} - Raleigh NC, USA\\
 & Symposium presentation: \textit{Ernst Mayr Symposium} \\
-& Talk: \href{http://figshare.com/articles/Total_evidence_phylogenies_the_missing_data_issue/1086216}{Total evidence phylogenies: the missing data issue}\\
+& Talk: Total evidence phylogenies: the missing data issue\\
+& Available here: \href{http://figshare.com/articles/Total_evidence_phylogenies_the_missing_data_issue/1086216}{goo.gl/oPfHZE}\\
 %---------------------------------------
 2014: & \textit{Challenges in Macroecology: Scaling the Time Barrier} - Natural History Museum \\
-& London - UK\\
-& Talk: \href{http://figshare.com/articles/Trees_with_fossil_and_living_species_the_data_issue/1056307}{Trees with fossil and living species: the data issue}\\
+& London, UK\\
+& Talk: Trees with fossil and living species: the missing data issue\\
+& Available here: \href{http://figshare.com/articles/Trees_with_fossil_and_living_species_the_data_issue/1056307}{goo.gl/c1RBER}\\
 %---------------------------------------
-2014: & \textit{$3^rd$ Annual Botany-Zoology Trinity Postgraduate Symposium} - Trinity College\\
-& Dublin - IE\\
-& Talk: \href{http://figshare.com/articles/Total_evidence_phylogenies_the_missing_data_issue/1086216}{Total evidence phylogenies: the missing data issue} - \textit{Runner up}.\\
+2013: & \textit{European Society for Evolutionary Biology Congress} - Lisbon, Portugal\\
+& Poster: Combining fossils and molecular phylogenies\\
+& Available here: \href{http://figshare.com/articles/Combining_fossils_and_molecular_phylogenies/1056300}{goo.gl/3HcRGH}\\
 %---------------------------------------
-2013: & \textit{European Society for Evolutionary Biology Congress} - Lisbon - PT \\
-& Poster: \href{http://figshare.com/articles/Combining_fossils_and_molecular_phylogenies/1056300}{Combining fossils and molecular phylogenies}\\
-%---------------------------------------
-2013: & \textit{11th International Mammalogical Conference} - Queen’s University, Belfast - UK \\
-& Poster: \href{http://figshare.com/articles/Combining_fossils_and_molecular_phylogenies/1056300}{Combining fossils and molecular phylogenies}\\
+2013: & \textit{11th International Mammalogical Congress} - Queen's University, Belfast, UK \\
+& Poster: Combining fossils and molecular phylogenies\\
+& Available here: \href{http://figshare.com/articles/Combining_fossils_and_molecular_phylogenies/1056300}{goo.gl/3HcRGH}\\
 %---------------------------------------
 \end{tabular}
 \bigskip
+%\newpage
 
 \raggedright\textbf{Workshops}\\[1.5ex]
+\begin{tabular}{ll}
+%--------------------------------------- 
+2013: & Introduction to Trinity Centre for High Performance Computing\\
+& Paddy Doyle, Trinity College Dublin, Ireland\\
+%---------------------------------------
+2013: & Spatial Analysis in \texttt{R} Workshop\\
+& Barry Rowlingson, University of Sheffield, UK\\
+%---------------------------------------
+2013: & Introduction to Morphometrics Workshop\\
+& Fran\c{c}ois Gould, Trinity College Dublin, Ireland\\
+%---------------------------------------
+2013: & IUCN Red List of Ecosystems Workshop\\
+& Edmund Barrow, Trinity College Dublin, Ireland\\
+
+
+\end{tabular}
+\bigskip
+
+
+%----------------------------------------------------------------------------------------
+%   Academic Services
+%----------------------------------------------------------------------------------------
+\section{PROFESSIONAL SERVICE}
+\raggedright\textbf{Reviewing:}
+Reviewer for the International Journal of Primatology
+\bigskip
+
+\raggedright\textbf{Workshops:}
+
 \begin{tabular}{ll}
 2014: & Tip-Dating workshop --- \textit{helper}\\
 & Nicholas Matzke \& April Wright, SVP Annual meeting - Berlin\\
 %---------------------------------------
-2014: & Software Carpentry Bootcamp - R and UNIX --- \textit{helper}\\
-& Devasena Inupakutika \& Aur Saraf, University of Nottingham - UK\\
-%--------------------------------------- 
-2013: & Introduction to Trinity Centre for High Performance Computing\\
-& Paddy Doyle, Trinity College Dublin - IE\\
-%---------------------------------------
-2013: & Spatial Analysis in R Workshop\\
-& Barry Rowlingson, University of Sheffield - UK\\
-%---------------------------------------
-2013: & Introduction to Morphometrics Workshop\\
-& Fran\c{c}ois Gould, Trinity College Dublin - IE\\
-%---------------------------------------
-2013: & IUCN Red List of Ecosystems Workshop\\
-& Edmund Barrow, Trinity College Dublin - IE\\
+2014: & Software Carpentry Bootcamp - \texttt{R} and UNIX --- \textit{helper}\\
+& Devasena Inupakutika \& Aur Saraf, University of Nottingham\\
+\end{tabular}
 
+\bigskip
+
+\raggedright\textbf{Academic memberships:}
+\begin{tabular}{ll}
+2014-present: & Member of the Society of Vertebrate Palaeontology\\
+2013-present: & Member of Society of Systematic Biologists\\
+2013-present: & British Ecological Society (BES) including Macroecology Special Interest Group\\
 \end{tabular}
 \bigskip
+
+\raggedright\textbf{Departmental services:}
+2013-present: Zoology Postgraduate student social committee chair
+\bigskip
+
 
 %----------------------------------------------------------------------------------------
 %   Teaching
@@ -235,66 +255,48 @@ Graphics: & Adobe Illustrator, Adobe Photoshop, Gimp, Inkscape\\[1.5ex]
 \bigskip
 
 %----------------------------------------------------------------------------------------
-%   Outreach
+%   Fieldwork
 %----------------------------------------------------------------------------------------
-\section{OUTREACH}
-\bigskip
-
--Regular contributor to \href{http://www.ecoevoblog.com/}{EcoEvo@TCD} blog.
-
--\href{http://www.youtube.com/watch?v=Y3ciaYSvbyU}{Threesis video} (thesis explained in three minutes).
-\bigskip
-
-\raggedright\textbf{Events}\\[1.5ex]
-\begin{tabular}{ll}
+\section{FIELDWORK AND DATA COLLECTION}
+\begin{tabular}{lp{14cm}}
+2013-14: & Museum data collection: Smithsonian Institute Natural History Museum (Washington DC), American Museum of Natural History (New York), Museum of Comparative Zoology (Cambridge, MA), Mus\'{e}um National d'Histoire Naturelle (Paris) \\
 %---------------------------------------
-2014: & Trinity College Zoological Department, Researcher's night\\
-& Trinity College Dublin - IE\\
-%---------------------------------------
-2014: & $1^{st}$ Soapbox Science Ireland event (volunteer helper)\\
-& Trinity College Dublin - IE\\
-%---------------------------------------
-2014: & "What can we learn from skeletons", practical lecture on comparative anatomy \\
-& Trinity College Dublin - IE \\
-%---------------------------------------
-2013: & Trinity College Zoological Museum guided tours\\
-& Trinity College Dublin - IE\\
-%---------------------------------------
-2013: & Trinity College Zoological Department, Culture night and Researcher's night\\
-& Trinity College Dublin - IE\\
-%---------------------------------------
-2010: & Introduction to palaeontological excavations\\
-& Mus\'{e}e des Dinosaurs (Esp\'{e}raza, Aude) - FR\\
-%---------------------------------------
-\end{tabular}
-\bigskip
-
-%----------------------------------------------------------------------------------------
-%   Miscellaneous
-%----------------------------------------------------------------------------------------
-\section{MISCELLANEOUS}
-\bigskip
-
-\raggedright\textbf{Fieldwork}\\[1.5ex]
-\begin{tabular}{ll}
-2013-14: & Museum data collection: \\
-& Smithsonian (US), AMNH (US), MCZ (US), MNHN (FR) \\
-%---------------------------------------
-2011-12: & Excavations in Cruzy (FR) \\
+2011-12: & Excavations in Cruzy, France \\
 & Southern France, Continental Cretaceous\\
 %---------------------------------------
-2011: & Excavations in Krasiej\'{o}w (PL)\\
+2011: & Excavations in Krasiej\'{o}w, Poland\\
 & Southern Poland, Continental Trias\\
 %---------------------------------------
-2009-10: & Excavations in Esp\'{e}raza (FR) - Site foreman\\
+2009-10: & Excavations in Esp\'{e}raza, France - Site fore-person\\
 & Southern France, Continental Cretaceous\\
 %---------------------------------------
 \end{tabular}
 \bigskip
 
+%----------------------------------------------------------------------------------------
+%   Outreach
+%----------------------------------------------------------------------------------------
+\section{PUBLIC ENGAGEMENT AND OUTREACH}
+-- Regular contributor to \href{http://www.ecoevoblog.com/}{EcoEvo@TCD} blog; rated \href{http://www.ecoevoblog.com/2014/10/06/blog-awards-winners-2014/}{best Irish Science and Technology blog (2014)}. \\
+-- Complete list available here: \href{http://tguillerme.github.io/outreach.html}{goo.gl/MAq9oA}\\
+-- Featured posts: \href{http://www.ecoevoblog.com/2013/11/04/how-do-lego-cars-evolve/}{How do lego cars evolve?}; \href{http://www.ecoevoblog.com/2013/06/04/if-you-please-draw-me-a-dino/}{If you please -- draw me a dino...}; \href{http://www.ecoevoblog.com/2015/02/06/the-more-the-better/}{The more the better?}.
 
-\raggedright\textbf{Spoken languages}\\[1.5ex]
-English, French and Dutch.
+-- \href{http://www.youtube.com/watch?v=Y3ciaYSvbyU}{Threesis video} (\textit{early stage} thesis project explained in three minutes).\\[1.5ex]
+
+\raggedright\textbf{Outreach Events}\\
+\begin{tabular}{lp{13cm}}
+%---------------------------------------
+2014 \& 2013: & Trinity College Dublin Zoology Department, Researcher's night -- \textit{participant}\\
+%---------------------------------------
+2014: & $1^{st}$ Soapbox Science Ireland -- \textit{helper}\\
+%---------------------------------------
+2014: & "What can we learn from skeletons", comparative anatomy practical -- \textit{Co-organiser}\\
+%---------------------------------------
+2013: & Trinity College Zoology Museum guided tours -- \textit{tour guide}\\
+%---------------------------------------
+2010: & Introduction to palaeontological excavations, Mus\'{e}e des Dinosaures (FR) -- \textit{animator}\\
+%---------------------------------------
+\end{tabular}
 \bigskip
 
 \end{document}
