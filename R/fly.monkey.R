@@ -23,26 +23,30 @@ fly.monkey <- function() {
             ybottom = mouvement
             ytop = 300 + mouvement
             rasterImage(jpg[[as.numeric(mouvement %% 2 == 0)+1]], xleft, ybottom , xright, ytop)
-        }
-        if(mouvement > 300 && mouvement < 601) {
-            ybottom = 300 - (mouvement-300)
-            ytop = 600 - (mouvement-300)
-            rasterImage(jpg[[as.numeric(mouvement %% 2 == 0)+1]], xleft, ybottom , xright, ytop)
-        }
-        if(mouvement > 600 && mouvement < 901) {
-            ybottom = (mouvement-600)
-            ytop = 300 + (mouvement-600)
-            rasterImage(jpg[[as.numeric(mouvement %% 2 == 0)+1]], xleft, ybottom , xright, ytop)
-        }
-        if(mouvement > 900 && mouvement < 1201) {
-            ybottom = 300 - (mouvement-900)
-            ytop = 600 - (mouvement-900)
-            rasterImage(jpg[[as.numeric(mouvement %% 2 == 0)+1]], xleft, ybottom , xright, ytop)
-        }
-        if(mouvement > 1200 && mouvement < 1501) {
-            ybottom = (mouvement-1200)
-            ytop = 300 + (mouvement-1200)
-            rasterImage(jpg[[as.numeric(mouvement %% 2 == 0)+1]], xleft, ybottom , xright, ytop)
+        } else {
+            if(mouvement > 300 && mouvement < 601) {
+                ybottom = 300 - (mouvement-300)
+                ytop = 600 - (mouvement-300)
+                rasterImage(jpg[[as.numeric(mouvement %% 2 == 0)+1]], xleft, ybottom , xright, ytop)
+            } else {
+                if(mouvement > 600 && mouvement < 901) {
+                    ybottom = (mouvement-600)
+                    ytop = 300 + (mouvement-600)
+                    rasterImage(jpg[[as.numeric(mouvement %% 2 == 0)+1]], xleft, ybottom , xright, ytop)
+                } else {
+                    if(mouvement > 900 && mouvement < 1201) {
+                        ybottom = 300 - (mouvement-900)
+                        ytop = 600 - (mouvement-900)
+                        rasterImage(jpg[[as.numeric(mouvement %% 2 == 0)+1]], xleft, ybottom , xright, ytop)
+                    } else {
+                        if(mouvement > 1200 && mouvement < 1501) {
+                            ybottom = (mouvement-1200)
+                            ytop = 300 + (mouvement-1200)
+                            rasterImage(jpg[[as.numeric(mouvement %% 2 == 0)+1]], xleft, ybottom , xright, ytop)
+                        }
+                    }
+                }
+            }
         }
     }
 }
