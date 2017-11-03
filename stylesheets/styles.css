@@ -874,6 +874,14 @@ section #title .credits.right {
   height: 160px;
   }
 
+  #gallery1 li {
+  /*display: block;*/
+  float: center;
+  width: 150px;
+  height: 100px;
+  }
+
+
   #gallery2 li p,
   #gallery2 li p {
   margin: 1em 10px;
