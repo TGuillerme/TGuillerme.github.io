@@ -940,3 +940,19 @@ section #title .credits.right {
   margin: 0 auto;
   }
 
+
+ #papercontainer {
+  width: 800px ;
+  max-width: 100% ;
+  margin-left: auto ;
+  margin-right: auto ;
+} 
+
+#paperimage {
+  float: left ;
+  padding: 5px;
+} 
+
+#paperdetails {
+  float: right ;
+} 
