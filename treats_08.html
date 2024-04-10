@@ -49,6 +49,18 @@
           <p><a href ="treats_09.html">Next step</a></p>
         </h3>
 
+      <details>
+        <summary>Speciation in <font color="#00c8ffff">modifiers</font>
+      </summary>
+        "speciation" part of the modifier: by default, a random number between 0 and 1 is drawn, if that number is smaller than the ratio between speciation and speciation + extinction, the lineage speciates (TRUE) or else, the lineage goes extinct (FALSE). In R this is equivalent to:
+        <p>
+        <i>runif(1) < speciation/(speciation + extinction)</i>
+        </p>
+        or in the treats algorithm:
+        <p>
+        <i>runif(1) < (bd.params$speciation/(bd.params$speciation + bd.params$extinction))</i>
+        </p>
+      </details>
       
       </section>
     </div>

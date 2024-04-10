@@ -49,10 +49,28 @@
           <p><a href ="treats_01.html">Previous step</a></p>
           <p><a href ="treats_02.html">Next step</a></p>
         </h3>
-
       
       </section>
+
+    <details>
+      <summary>Lineage selection in <font color="#00c8ffff">modifiers</font>
+    </summary>
+      "selection" part of the modifier: by default, the selection is randomly choosing one lineage among the lineages currently not extinct. In R this is equivalent to:
+        <p>
+        <i>sample(1, n)</i>
+        </p>
+        or in the treats algorithm:
+        <p>
+        <i>sample(1, lineage$n)</i>
+        </p>
+    </details>
+    
+
     </div>
+
+
+
+
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
   </body>
 </html>

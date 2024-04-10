@@ -49,7 +49,19 @@
           <p><a href ="treats_07.html">Next step</a></p>
         </h3>
 
-      
+      <details>
+        <summary>Waiting time in <font color="#00c8ffff">modifiers</font>
+      </summary>
+        "branch.length" part of the modifier: by default, the waiting time is function of an exponential distribution of the number of not extinct lineages, and the birth and death parameters. I.e. the algorithm samples a random number for a random exponential distribution with a rate of number of species times the birth plus death parameter. In R this is equivalent to:
+        <p>
+        <i>rexp(1, sum(n * (speciation + extinction)))</i>
+        </p>
+        or in the treats algorithm:
+        <p>
+        <i>rexp(1, sum(lineage$n * (bd.params$speciation + bd.params$extinction)))</i>
+        </p>
+      </details
+    
       </section>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
